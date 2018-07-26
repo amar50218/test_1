@@ -8,7 +8,7 @@ pipeline {
     }
     stage('gitpush') {
       steps {
-        bat(script: 'D:\\code\\file.bat', encoding: 'git push', returnStatus: true, returnStdout: true)
+        sleep 600
       }
     }
   }
