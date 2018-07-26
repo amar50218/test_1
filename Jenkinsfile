@@ -11,5 +11,10 @@ pipeline {
         sleep 600
       }
     }
+    stage('creating_file') {
+      steps {
+        writeFile(file: 'file.txt', text: 'created file and movied to container', encoding: 'no')
+      }
+    }
   }
 }
