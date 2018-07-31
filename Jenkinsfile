@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('gitcheckout') {
           steps {
-            git(url: 'https://github.com/amar50218/test_1.git', branch: 'master', credentialsId: 'bc97a384-77db-4a06-8f9a-0d0754390d89', poll: true, changelog: true)
+            git(url: 'https://github.com/amar50218/test_1', branch: 'master', credentialsId: 'bc97a384-77db-4a06-8f9a-0d0754390d89', poll: true, changelog: true)
           }
         }
         stage('SCM') {
